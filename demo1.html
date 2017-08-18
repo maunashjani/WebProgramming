@@ -1,37 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Document</title>
+    <script type="text/javascript">
+    
+        //alert(c);
+        //document.getElementById("pData").innerHTML = c;
+        //document.getElementById("pData").innerHTML += c;
+        //document.getElementById("pData").innerHTML += "<b>"+c+"</b>";
+
+    function Add(x ,y)
+    {
+        var c = parseInt(x) + parseInt(y);
+        return c;
+    }
+
+    function Display()
+    {
+        var a=document.getElementById("txtNum1").value;
+        var b=document.getElementById("txtNum2").value;;
+        
+        var x = Add(a,b);
+        document.getElementById("pData").innerHTML = x;
+    }
+
+    </script>
 </head>
-<body bgcolor="blue">
-    <header>Website Name</header>
+<body>
+    
+Enter No1: 
+<input type="text" id="txtNum1">
 
-    <nav>
-        Menu1 | Menu 2 | Menu 3 | Menu 4
-    </nav>
+<br>
+<br>
 
-    <section id="s1">
-        This is side menu.
-        <br>
-        Menu1 <br>
-        Menu 2 <br>
-        Menu 3 <br>
-        Menu 4
-    </section>
+Enter No2: 
+<input type="text" id="txtNum2">
 
-    <section id="s2">
-        <article id="a1">
-            This is article 1
-        </article>
-        <article id="a2">
-            This is article 2
-        </article>
-    </section>
+<br>
+<br>
 
-    <aside>
-        This is related to the main articles.
-    </aside>
+<input type="submit" onclick="Display()">
 
-    <footer>Copyright XYZ</footer>
+<br>
+<br>
+
+<p id="pData">The output is - </p>
+
 </body>
 </html>

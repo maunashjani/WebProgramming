@@ -1,62 +1,40 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <title>Document</title>
-</head>
+<script>
 
-<body>
-    <h1>H1</h1>
-    <h2>H2</h2>
-    <h3>H3</h3>
-    <h4>H4</h4>
-    <h5>H5</h5>
-    <h6>H6</h6>
-    <p>This is a paragraph.</p>
-    <p>This is another paragraph.</p>
+function Demo(a)
+{
+    //var a = parseInt(document.getElementById("txtNum").value);
 
-    <!--
-        <p><b>This text is bold</b></p>
-    <p><i>This text is italic</i></p>
-    <p>
-        <u>This is underline</u>
-    </p>
-    <p>H<sub>2</sub>O</p>
-    <p>2<sup>2</sup>=4</p>
-    -->
-
-    <!--<br>
-
-    x<sup>2</sup>+y<sup>2</sup>=z<sup>2</sup>
-
-    <br>
-
-    <b><u>Hello</u></b>
-
-    <br>
-
-    log<sub>2</sub>-->
-
-    <br>
-
-    <b>Bold text</b> <br>
-    <strong>Important text</strong> <br>
-    <i>Italic text</i><br>
-    <em>Emphasized text</em><br>
-    <mark>Marked text</mark><br>
-    <small>Small text</small><br>
-    <big>Big Text</big><br>
-    <del>Deleted text</del><br>
-    <ins>Inserted text</ins><br>
-    <sub>Subscript text</sub><br>
-    <sup>Superscript text</sup><br>
-    <strike>Strike text</strike><br>
-
-    <center><h1>Please Don't talk!</h1></center>
-
+    a = parseInt(a);
     
+    for(i=a;i<a+5;i++)
+    {
+        document.getElementById("pData").innerHTML+=i;
+    }
+}
 
+</script>
 
+</head>
+<body>
+    
+<form id="f1">
+    Enter a No: 
+    <input type="text" id="txtNum">
+    
+    <br>
+    <br>
+    
+    <input type="button" onclick="Demo(f1.txtNum.value)">
+
+</form>    
+    <br>
+    <br>
+    
+    <p id="pData">The output is - </p>
+    
 </body>
-
 </html>
