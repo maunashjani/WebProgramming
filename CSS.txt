@@ -1,0 +1,46 @@
+CSS=> Styling the page.
+
+3 types
+
+1. External CSS 
+=>CSS is written in an external file with extension .css and 
+linked to the html page where styling is to be done using the 
+<link> tag in the <head>...</head>
+
+2. Internal CSS
+=>CSS is written in the same html page where styling is to be 
+done to achieve this the CSS is written in the 
+<style>...</style> tag in the <head>...</head>
+
+3. Inline CSS
+=> CSS is written individually for each element of HTML where 
+styling is to be done. This can be achieved using the style 
+attribute of the element [Just like almost all elements in 
+HTML support id attr, even style attr is supported]
+
+Imp Point to remember for CSS:
+
+CSS should be written in the following format/rule:
+
+selector 
+{
+	property: value;
+}
+
+or just property:value;
+
+
+selector
+{
+	property:value;
+}
+
+1. Universal * 
+2. Element / Type element
+3. Group / Grouping element, element
+4. Descendant element element
+5. Class .main
+6. ID #txt
+
+
+
