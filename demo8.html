@@ -1,96 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script>
+        function demo() {
+            var str = "Visit W3Schools";
+            //var n = str.search(/w3schools/i);
+            
+            //var n = str.search("W3Schools");
+            //var n = str.search("w3Schools");
+
+            //var n = str.search("[abc]");
+            //var n = str.search("[^abc]");
+
+            // var str = "Visit Microsoft!";
+            // var res = str.replace(/microsoft/i, "W3Schools");
+            // alert(res);
+
+            // var patt = /x/;
+            // var res = patt.test("India is the best!");
+            // alert(res);
+
+            // var str = "The rain in SPAIN stays mainly in the plain"; 
+            // var res = str.match(/ain/gi);
+
+            // var str = "12data34moredata56nodata";
+            // //var res = str.match(/\d/g);
+            // //var res = str.match(/\w/g);
+
+            // var str = "12d@ata34moredata56nodata";
+            // var res = str.match(/\W/g);
+            // alert(res);
+
+            var str = "some data";
+            var res = str.match(/a+/i);
+            var res1 = str.match(/a*/g);
+            alert(res);
+            alert(res1);
+
+
+        }
+    </script>
 </head>
 
-<body>
-
-    <!--Table Tag-->
-
-    <!--<table border="1">
-        <tr>
-            <td>Column1</td>
-            <td>Column2</td>
-        </tr>
-        <tr>
-            <td>D1</td>
-            <td>D2</td>
-        </tr>
-    </table>-->
-
-    <!--<table border align="center" cellpadding="10">
-        <caption>Movie Table </caption>
-        <thead>
-        <tr>
-            <th>movies</th>
-            <th>actor</th>
-            <th>actress</th>
-         </tr>
-        </thead>
-        <tbody>
-        <tr align="center">
-            <td>Sultan</td>
-            <td>Salman</td>
-            <td rowspan="2">Anushka</td>
-        </tr>
-        <tr>
-            <td>PK</td>
-            <td align="center" >Aamir</td>-->
-    <!--<td>Anushka</td>-->
-    <!--</tr>
-        <tr>
-            <td>Paa</td>
-            <td>Abhishek</td>
-            <td>Vidya</td>
-        </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-            <td colspan="3">End</td>
-            </tr>
-        </tfoot>
-    </table>-->
-
-    <!--<form action="">
-    <table border>
-     <tr>
-         <td>login</td>
-         <td><input type="text" placeholder="name"></td>
-    </tr>
-    <tr>
-         <td>password</td>
-         <td><input type="password" placeholder="password"></td>
-    </tr>
-    <tr>
-        <td colspan="2">
-        <input type="submit">
-        </td>
-        </tr>
-    </table>
-    </form>-->
-
-
-    <!--<dl>
-        <dt>Computer Science</dt>
-        <dd>Programming is a major part here.</dd>
-    </dl>-->
-
-    <form>
-        <fieldset>
-            <legend>User Details:</legend>
-            Name: <input type="text">
-            <br> Email: <input type="text">
-            <br> Date of birth: <input type="date">
-        </fieldset>
-    </form>
-
-
-
+<body onload="demo()">
+    <h1 id="header1">Hello</h1>
 </body>
 
 </html>

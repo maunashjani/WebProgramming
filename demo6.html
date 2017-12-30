@@ -1,22 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script>
+
+        function Demo(){
+            //var d = new Date();
+            //var d = new Date("2017-03-25");
+            
+            //document.getElementById("p1").innerHTML = d;
+
+            var d = new Date();
+            // document.getElementById("p1").innerHTML =  
+            // d.getDate() + "/" + d.getMonth() + "/" + d.getFullYear();
+            
+            //document.getElementById("p1").innerHTML = d.getDay();
+
+            document.getElementById("p1").innerHTML =  
+            d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+        }
+
+    </script>
 </head>
 <body>
-    <h1 align="right">Navigation in HTML pages</h1>
+    <button onclick="Demo()">Try it</button>
     <br>
-    <a href="demo1.html" target="_blank">Demo 1</a>
-    <br>
-    <a href="demo2.html" target="_self">Demo 2</a>
-    <br>
-    <a href="demo3.html" target="_blank" >Demo 3</a>
-    <br>
-    <a href="http://www.google.com" target="_blank" >
-    Google</a>
-    <br>
+    <p id="p1"></p>
 </body>
 </html>

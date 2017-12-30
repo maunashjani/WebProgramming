@@ -1,18 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script>
+        var demo;
+
+        function SomeFunction() {
+            //every 3 seconds
+            //demo = setInterval(Hello, 3000);
+
+            //only once.
+            //demo = setInterval(alert('hi'), 3000);
+
+            //using callback/anonymous function
+            demo = setInterval(function(){
+                alert('hi');
+            }, 3000);
+        }
+
+        function Hello() {
+            alert("Hello!");
+        }
+    </script>
 </head>
-<body bgcolor="blue">
-    <h1 align="center">VES</h1>
-    <hr>
-    <div>
-    <p>This is <b>Computer Science</b> <i> class</i>. The <u>subject</u>
-    name is <b>Web Programming</b>
-    </p>
-    </div>
+
+<body>
+        <button onclick="SomeFunction()">Try it</button>
+
+        <br>
+
+        <button onclick="clearInterval(demo)">Clear</button>
 </body>
+
 </html>

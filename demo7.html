@@ -1,24 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script>
+        function demo() {
+            var x = Math.round(4.7);
+            var y = Math.round(4.4);
+            var z = Math.pow(3, 3);
+            var a = Math.sqrt(144);
+            var b = Math.abs(-10.10);
+            var c = Math.random();
+            var d = Math.floor(Math.random() * 10); //0 - 10
+            var e = Math.floor(Math.random() * 100); //0 - 100
+            var w = window.innerWidth;
+            var h = window.innerHeight;
+            var n1 = navigator.appName;
+            var n2 = navigator.appCodeName;
+            var n3 = navigator.platform;
+            document.getElementById("p1").innerHTML = "";
+            //"Page location is " + window.location.href;
+            //window.location.hostname;
+
+            //"Page path is " + window.location.pathname;
+            //"Page protocol is " + window.location.protocol;
+
+            //"Port number is " + window.location.port;
+
+           // window.location.assign("https://www.google.com");
+
+            //window.location.href = "https://www.google.com";
+
+            //window.location.href = "demo3.html";
+
+            //window.location.assign("demo3.html");
+
+            //window.open();
+
+            //window.close();
+
+            //history.back();
+
+            //history.forward();
+
+            //history.go(2);
+
+
+          document.cookie = "username=VES";
+
+       
+
+
+
+        }
+    </script>
 </head>
+
 <body>
-    Contents:
-    <br>
-    <a href="#t1">Topic 1</a>
-    <br>
-    <a href="#t2">Topic 2</a>
-    <br>
-    <h1><a id="t1">Topic 1</a></h1>
-    <p>
-    </p>
-    <br>
-    <h1><a id="t2">Topic 2</a></h1>
-    <p>
-    </p>
+    <button onclick="demo()">TRY</button>
+    <p id="p1"></p>
 </body>
+
 </html>
